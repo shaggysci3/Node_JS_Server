@@ -2,7 +2,7 @@ const http = require('http').createServer();
 
 
 const io = require('socket.io')(http,{
-    cors:{origin:"*"}
+    cors:{origin:"http://127.0.0.1:5173/cart"}
 });
 
 io.on('connection', (socket)=>{
